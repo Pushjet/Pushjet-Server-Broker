@@ -1,0 +1,16 @@
+# Editor
+.idea
+*.cfg
+
+# Gedit
+*~
+
+# Vim
+*.swp
+
+# Golang 
+.go
+
+# Build
+server-broker
+pushjet-broker
