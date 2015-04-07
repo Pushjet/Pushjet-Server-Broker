@@ -9,4 +9,4 @@ clean:
 	rm -f ./pushjet-broker
 
 install:
-        cp -v pushjet-broker /usr/bin/pushjet-broker
+	cp -v pushjet-broker /usr/bin/pushjet-broker
