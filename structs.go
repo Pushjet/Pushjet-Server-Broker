@@ -1,13 +1,9 @@
 package main
 
-const (
-    ACTION_NEW_MESSAGE   = iota
-    ACTION_UPDATE_LISTEN = iota
-)
 
 type PushjetApiCall struct {
     Message PushjetMessage
-    Listen  PushjetListen
+    Subscription  PushjetSubscription
 }
 
 type PushjetService struct {
@@ -17,7 +13,7 @@ type PushjetService struct {
     Public  string
 }
 
-type PushjetListen struct {
+type PushjetSubscription struct {
     Uuid              string
     Timestamp         int
     Timestamp_checked int

@@ -76,9 +76,9 @@ func main() {
 			log.Println("Sending out message for ", apiMessage.Message.Service.Public)
 			socketPub.Send(fmt.Sprintf("%s %s", apiMessage.Message.Service.Public, apiMessageRaw), 0)
 		}
-		if apiMessage.Listen.Timestamp > 0 {
-			log.Println("Sending out listen update for ", apiMessage.Listen.Uuid)
-			socketPub.Send(fmt.Sprintf("%s %s", apiMessage.Listen.Uuid, apiMessageRaw), 0)
+		if apiMessage.Subscription.Timestamp > 0 {
+			log.Println("Sending out subscription update for ", apiMessage.Subscription.Uuid)
+			socketPub.Send(fmt.Sprintf("%s %s", apiMessage.Subscription.Uuid, apiMessageRaw), 0)
 		}
 	}
 }
