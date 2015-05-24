@@ -1,4 +1,4 @@
-Pushjet Server Broker
+Pushjet Server Broker [![License](http://img.shields.io/badge/license-BSD-blue.svg?style=flat)](/LICENSE)
 =====================
 This part of pushjet manages the communication between clients that are 
 listening to pushjet and the server. It uses ZeroMQ for the messaging 
